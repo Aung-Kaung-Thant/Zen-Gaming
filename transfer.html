@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Gamming</title>
+    <!-- For Font -->
+    <link rel="stylesheet" href="/assets/font/Anton/Anton-Regular.ttf">
+    <link rel="stylesheet" href="/assets/font/OpenSans/OpenSans-VariableFont_wdth,wght.ttf">
+    <!-- For Stylesheed -->
+    <link rel="stylesheet" href="/assets/css/transfer.css">
+    <link rel="icon" href="/assets/image/logo.png">
+    
+</head>
+<body>
+    <nav>
+    <a href="/index.html">
+        <button>
+            <img src="/assets/image/logo.png" alt="logo" class="img">
+        </button>
+    </a>
+    <a href="/index.html" class="linkf">
+        HOME
+    </a>
+    <a href="/index.html" class="link">
+        GAMES
+    </a>
+    <a href="/index.html" class="link">
+        TOP
+    </a>
+    <a href="/transfer.html" class="link">
+        TRANSFER
+    </a>
+    </nav>
+    <a href="/transfer.html" class="link">
+        <br>&lt; BACK TO HOME
+    </a>
+    <div class="transfer-form">
+        <h2>Send money online</h2>
+        
+        <div class="form-group">
+            <label>Receiver’s country</label>
+            <select name="select_country">
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="france">France</option>
+                <option value="spain">Spain</option>
+                <option value="italy">Italy</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ger">Germany</option>
+                <option value="jpan">Japan</option>
+                <option value="rus">Russia</option>
+                <option value="bra">Brazil</option>
+                <option value="indon">Indonesia</option>
+                <option value="mexico">Mexico</option>
+                <option value="canada">Canada</option>
+                <option value="turkey">Turkey</option>
+                <option value="thailand">Thailand</option>
+                <option value="australia">Australia</option>
+                <option value="south_k">South Korea</option>
+                <option value="uae">United Arab Emirates</option>
+                <option value="my">Myanmar</option>
+                <option value="usa">USA</option>
+                <option value="laos">Laos</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <div class="amount-group">
+                <label>Send amount</label>
+                <input type="number" placeholder="0.00">
+            </div>
+            <div class="amount-group">
+                <label>Receive amount</label>
+                <input type="number" placeholder="0.00" disabled>
+            </div>
+        </div>
+
+        <div class="options-grid">
+            
+            <div class="option-group">
+                <h3>How does your receiver want the money?</h3>
+                <input type="radio" name="riv" id="ro">
+                <input type="radio" name="riv" id="rt" checked>
+                <input type="radio" name="riv" id="rth">
+
+                <label for="ro" class="option-item">Cash pick-up</label>
+                <label for="rt" class="option-item">Bank account</label>
+                <label for="rth" class="option-item">Paytime</label>
+            </div>
+
+            <div class="option-group">
+                <h3>How would you like to pay?</h3>
+                <input type="radio" name="pay" id="po" checked>
+                <input type="radio" name="pay" id="pc">
+                <input type="radio" name="pay" id="cc">
+                <input type="radio" name="pay" id="dc">
+                <input type="radio" name="pay" id="ba">
+
+                <label for="po" class="option-item">Pay online</label >
+                <label for="pc" class="option-item">Pay cash in-store</label >
+                <label for="cc" class="option-item">Credit card</label >
+                <label for="dc" class="option-item">Debit card</label>
+                <label for="ba" class="option-item">Bank account</label>
+            </div>
+        </div>
+        <a href="/download.html">
+            <button class="continue-btn">Continue &gt;</button>
+        </a>
+    </div>
+</body>
+</html>
