@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'anton', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+:root{
+    --nav-bgcolor: rgb(24, 24, 24);
+    --body-color: #1a1a1a;
+}
+*{
+    background-color: var(--body-color);
+}
+nav{
+    z-index: 1000;
+    top:0;
+    position: sticky;
+    display: flex;
+    background-color: var(--nav-bgcolor);
+}
+button{
+    cursor: pointer;
+}
+nav button{
+    background-color: transparent;
+    border: transparent;
+}
+img.img{
+    margin-left: 83.3333335px;
+    height: 75px;
+    width: 100px;
+}
+nav a{
+    text-decoration: none;
+}
+nav a.linkf{
+    margin-left: 1000px;
+    margin-top: 37.5px;
+}
+nav a.link{
+    margin-top: 37.5px;
+    margin-left: 75px;
+}
+div.tabs-container{
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    position: relative;
+    margin-bottom: 440px;
+}
+div.tabs-container input{
+    display: none;
+}
+div.tabs-container div.tab-title{
+    color: white;
+    font-weight: bolder;
+    /* margin: 35px 0; */
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.25s;
+}
+input:checked + label  .tab-title{
+    background-color: white;
+    color: black;
+    font-size: larger;
+    border-top-right-radius: 5px; 
+    border-top-left-radius: 5px;
+}
+.tab-item{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    top: 50px;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 0;
+    width: 100%;
+    text-align: center;
+}
+input:checked + label .tab-item{
+    opacity: 1;
+    z-index: 1;
+}
+.tab-item table{
+    /* margin: 0 90.25px; */
+    width: 30%;
+    margin: 0 auto;
+}
+.tab-item table tr td{
+    text-align: center;
+}
+.tab-item table tr td a img{
+    width: 189px;
+    height: 267px;
+    margin: 0 auto;
+}
+.tab-item table tr td a h3{
+    margin: 15px 0;
+}
+.tab-item table tr td a button{
+    width: 189px;
+    padding: 12.5px;
+    background-color: chartreuse;
+    border: transparent;
+    border-radius: 5px;
+}
